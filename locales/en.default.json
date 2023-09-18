@@ -336,6 +336,16 @@
       "carousel": "Carousel",
       "slide": "Slide"
     },
+    "slider-cty": {
+      "load_slide": "Cargar diapositiva",
+      "previous_slideshow": "Diapositiva anterior",
+      "next_slideshow": "Diapositiva siguiente",
+      "pause_slideshow": "Pausar la presentación",
+      "play_slideshow": "Reproducir la presentación",
+      "carousel": "Carrusel",
+      "slide": "Diapositiva"
+    },
+
     "page": {
       "title": "Page title"
     },
