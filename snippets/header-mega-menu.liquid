@@ -32,7 +32,7 @@
                 tabindex="-1"
               >
                 <ul
-              
+                style="color: {{ color_text }};"
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
                 >
@@ -49,7 +49,7 @@
                         {{ childlink.title | escape }}
                       </a>
                       {%- if childlink.links != blank -%}
-                        <ul  class="list-unstyled" role="list">
+                        <ul style="color: {{ color_text }};" class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
                             <li>
                               <a
