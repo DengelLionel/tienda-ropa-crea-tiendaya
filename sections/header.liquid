@@ -141,6 +141,7 @@
       assign has_app_block = true
     endif
   endfor
+  assign color_text=section.settings.color_letras_icon
 -%}
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} style="background-color:{{ section.settings.color_scheme }}; " class="header-wrapper  gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
@@ -202,7 +203,7 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu',color_text:section.settings.color_letras_icon
+          render 'header-mega-menu',color_text:color_text
         endif
       endif
     %}
