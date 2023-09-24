@@ -4,11 +4,15 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-
+<style>
+  .color-texto-li{
+    color:{{ color_text }};
+  }
+</style>
 <nav  class="header__inline-menu">
   <ul   class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li style="color: {{ color_text }};">
+      <li class="color-texto-li">
         {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -37,7 +41,7 @@
                   role="list"
                 >
                   {%- for childlink in link.links -%}
-                    <li style="color: {{ color_text }};">
+                    <li class="color-texto-li">
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
@@ -52,7 +56,7 @@
                       {%- if childlink.links != blank -%}
                         <ul  class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
-                            <li style="color: {{ color_text }};">
+                            <li class="color-texto-li">
                               <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
