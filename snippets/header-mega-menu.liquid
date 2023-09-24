@@ -5,7 +5,7 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+<nav style="color: {{ section.settings.color_letras_icon}};" class="header__inline-menu">
   <ul  class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
