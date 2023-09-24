@@ -12,7 +12,7 @@
 <nav  class="header__inline-menu">
   <ul   class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li class="color-texto-li">
+      <li >
         {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -36,17 +36,17 @@
                 tabindex="-1"
               >
                 <ul
-                style="color: {{ color_text }};"
+                
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}
-                    <li class="color-texto-li">
+                    <li >
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        style="color: {{ color_text }};"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                     
+                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %} color-texto-li"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
@@ -56,12 +56,12 @@
                       {%- if childlink.links != blank -%}
                         <ul  class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
-                            <li class="color-texto-li">
+                            <li >
                               <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
-                                style="color: {{ color_text }};"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                            
+                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} color-texto-li"
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
@@ -82,8 +82,8 @@
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
-            style="color: {{ color_text }};"
-            class="header__menu-item list-menu__item  focus-inset"
+          
+            class="header__menu-item list-menu__item  focus-inset color-texto-li"
             {% if link.current %}
               aria-current="page"
             {% endif %}
