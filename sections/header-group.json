@@ -37,7 +37,8 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "span {color: white;}"
+        "span,a {color: white;}",
+        ".header__active-menu-item {background-color: gold}"
       ],
       "settings": {
         "logo_position": "middle-left",
@@ -45,8 +46,8 @@
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "#1773b0",
-        "color_letras_icon": "#ffffff",
+        "color_scheme": "#242833",
+        "color_letras_icon": "#1773b0",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
