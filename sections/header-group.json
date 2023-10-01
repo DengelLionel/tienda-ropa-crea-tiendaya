@@ -36,14 +36,17 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "a {color: white;}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "#f46b6b",
-        "color_letras_icon": "#1773b0",
+        "color_scheme": "#1773b0",
+        "color_letras_icon": "#ffffff",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
