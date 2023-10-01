@@ -27,7 +27,7 @@
         "button"
       ],
       "custom_css": [
-        ".button--secondary {}"
+        ".button--secondary {background-color: red}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/FOTO_20PORTADA-k9aF-U90789873934cz-1248x770_El_20Norte_1.jpg",
