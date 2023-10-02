@@ -41,7 +41,8 @@
         "span:hover,a:hover {color: gold;}",
         ".header__active-menu-item {color: gold;}",
         "#menu-drawer {background-color: black;}",
-        "#menu-drawer > .menu-drawer__menu-item--active {background-color: white; color: gold;}"
+        "#menu-drawer > .menu-drawer__menu-item--active {background-color: white; color: gold;}",
+        "#menu-drawer > .menu-drawer__menu > li {margin-bottom: 0; }"
       ],
       "settings": {
         "logo_position": "middle-left",
