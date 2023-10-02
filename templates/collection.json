@@ -3,7 +3,8 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-hero__inner {position: 'relative';}"
+        ".collection-hero__inner {position: relative;}",
+        ".collection-hero__image-container {position: absolute}"
       ],
       "settings": {
         "show_collection_description": true,
