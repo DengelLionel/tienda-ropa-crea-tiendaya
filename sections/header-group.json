@@ -37,7 +37,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "span,a {color: white; }",
+        "span,a {color: white;}",
         ".header__active-menu-item {color: gold; }"
       ],
       "settings": {
