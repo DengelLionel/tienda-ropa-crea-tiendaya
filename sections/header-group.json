@@ -37,11 +37,9 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".menu-drawer__menu-item-active {background-color: white; color: gold; }",
-        " .menu-drawer__menu > li {margin-bottom: 0; }",
-        "span,a {color: white;}",
+        "span,a {color: white; }",
         ".header__active-menu-item {color: gold;}",
-        "#menu-drawer {background-color: black;}"
+        "#menu-drawer {background-color: black; }"
       ],
       "settings": {
         "logo_position": "middle-left",
