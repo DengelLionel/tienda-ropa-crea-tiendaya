@@ -39,7 +39,8 @@
       "custom_css": [
         "span,a {color: white;}",
         ".menu-drawer__menu > li:hover {background-color: white; margin-bottom: 0;}",
-        ".header__active-menu-item {color: gold;}"
+        ".header__active-menu-item {color: gold;}",
+        "#menu-drawer {background-color: black;}"
       ],
       "settings": {
         "logo_position": "middle-left",
