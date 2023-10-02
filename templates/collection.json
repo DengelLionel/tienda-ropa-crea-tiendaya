@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "custom_css": [
         ".collection-hero__inner {position: relative;}",
-        ".collection-hero__image-container {position: absolute}"
+        ".collection-hero__image-container {position: absolute; width: 100%; height: 100%; object-fit: contain; }"
       ],
       "settings": {
         "show_collection_description": true,
