@@ -38,7 +38,7 @@
       "type": "header",
       "custom_css": [
         "span,a {color: white;}",
-        ".header__active-menu-item {color: gold; }"
+        ".header__active-menu-item {color: gold;}"
       ],
       "settings": {
         "logo_position": "middle-left",
