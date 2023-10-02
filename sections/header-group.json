@@ -37,9 +37,10 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "span,a {color: white; }",
+        "span,a {color: white;}",
+        "span:hover,a:hover {color: gold}",
         ".header__active-menu-item {color: gold;}",
-        "#menu-drawer {background-color: black; }"
+        "#menu-drawer {background-color: black;}"
       ],
       "settings": {
         "logo_position": "middle-left",
