@@ -3,7 +3,7 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-hero__image-container.media gradient {object-fit: cotain;}"
+        ".collection-hero__image-container.media gradient {}"
       ],
       "settings": {
         "show_collection_description": true,
