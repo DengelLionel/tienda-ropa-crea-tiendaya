@@ -3,7 +3,7 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-hero__image-container.media gradient {object-fit: cotain}"
+        ".collection-hero__image-container.media gradient {object-fit: cotain;}"
       ],
       "settings": {
         "show_collection_description": true,
@@ -18,12 +18,12 @@
         "columns_desktop": 4,
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "vertical",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
