@@ -369,6 +369,11 @@
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');
+        //prueba
+      const stickyType = this.getAttribute('data-sticky-type');
+    if (stickyType === 'initial-transparent') {
+    this.header.style.backgroundColor = 'red';
+  }
       };
 
       this.currentScrollTop = 0;
@@ -382,11 +387,7 @@
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
-//prueba
-      const stickyType = this.getAttribute('data-sticky-type');
-    if (stickyType === 'initial-transparent') {
-    this.header.style.backgroundColor = 'red';
-  }
+
       
     }
 
