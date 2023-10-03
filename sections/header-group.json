@@ -49,7 +49,7 @@
         "logo_position": "top-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "always",
+        "sticky_header_type": "initial-transparent",
         "show_line_separator": true,
         "color_scheme": "#121212",
         "color_letras_icon": "#1773b0",
