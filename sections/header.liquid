@@ -413,13 +413,13 @@
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const header = document.querySelector('.header-wrapper ')
       const firstColor = header.getAttribute('data-initial-transparent') 
-      if(scrollTop > 100) { 
+      if(scrollTop > 60) { 
         header.style.top = 0
-        header.style.backgroundColor = 'transparent'
+        header.style.backgroundColor = firstColor
       } else {
         
         header.style.top = '50px'
-        header.style.backgroundColor = firstColor
+        header.style.backgroundColor = 'transparent'
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
