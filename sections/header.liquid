@@ -379,7 +379,7 @@
         header.style.color = "white"; // 
 });
         header.addEventListener("mouseout", function() {
-          const a = {{ section.settings.color_scheme }}
+          const a = {% {{ section.settings.color_scheme }} %}
           console.log(a) 
         header.style.backgroundColor = {{ section.settings.color_scheme }}
 });
