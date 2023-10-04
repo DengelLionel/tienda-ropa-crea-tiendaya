@@ -372,10 +372,11 @@
         const header = document.querySelector('.header-wrapper ');
         if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
         header.style.backgroundColor = 'transparent';
+        header.style.width = '100%'
         header.style.position = 'fixed';
         header.addEventListener("mouseover", function() {
-  miElemento.style.backgroundColor = "red"; // Cambia el color de fondo a rojo
-  miElemento.style.color = "white"; // Cambia el color del texto a blanco
+  header.style.backgroundColor = "red"; // Cambia el color de fondo a rojo
+  header.style.color = "white"; // Cambia el color del texto a blanco
 });
 
   }
