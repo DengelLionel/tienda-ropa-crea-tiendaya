@@ -352,8 +352,6 @@
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
 
-{% assign colorScheme = section.settings.color_scheme %}
-
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
