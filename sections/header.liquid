@@ -369,6 +369,7 @@
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');
+        const fixeado = document.querySelector('.shopify-section-header-sticky');
         if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
     this.header.style.backgroundColor = 'transparent';
     this.header.style.position = 'fixed';
