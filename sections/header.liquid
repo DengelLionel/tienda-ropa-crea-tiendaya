@@ -371,9 +371,9 @@
         this.header.classList.add('shopify-section-header-sticky');
         const header = document.querySelector('.header-wrapper ');
         if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
-        elHeader.style.backgroundColor = 'transparent';
-        elHeader.style.width = '100%'
-        elHeader.style.position = 'fixed';       
+        this.elHeader.style.backgroundColor = 'transparent';
+        this.elHeader.style.width = '100%'
+        this.elHeader.style.position = 'fixed';       
   }
       };
 
@@ -413,7 +413,7 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if(scrollTop > 0) { 
-        console.log(elHeader.style.backgroundColor) 
+        console.log(this.elHeader.style.backgroundColor) 
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
