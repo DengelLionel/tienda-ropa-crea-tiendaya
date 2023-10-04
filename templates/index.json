@@ -69,6 +69,7 @@
         "template--21034285203752__d0a97e4b-2862-4e53-b7c2-dccb35cdbcbf-slide-2": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/02_1.png",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
