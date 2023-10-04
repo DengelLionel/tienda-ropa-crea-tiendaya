@@ -356,7 +356,8 @@
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
-      
+            this.a = {%- section.settings.color_scheme -%}
+
     }
     connectedCallback() {
       this.header = document.querySelector('.section-header');
@@ -413,8 +414,7 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const header = document.querySelector('.header-wrapper ')
-      const a = {%- section.settings.color_scheme -%}
-      console.log(a) 
+      console.log(this.a) 
 
       if(scrollTop > 100) { 
         header.style.top = 0
