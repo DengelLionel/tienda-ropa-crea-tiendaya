@@ -356,7 +356,7 @@
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
-      this.a = document.querySelector('.header-wrapper ').style.backgroundColor
+      this.a = {%- section.settings.color_scheme -%}
     }
     connectedCallback() {
       this.header = document.querySelector('.section-header');
