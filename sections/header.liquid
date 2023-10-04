@@ -412,10 +412,12 @@
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const header = document.querySelector('.header-wrapper ')
-      const firstColor = header.getAttribute('data-initial-transparent')
       
-      if(scrollTop > 45) { 
+
+      if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
+        const header = document.querySelector('.header-wrapper ')
+        const firstColor = header.getAttribute('data-initial-transparent')
+        if(scrollTop > 45) { 
         header.style.top = 0
         header.style.backgroundColor = firstColor
       } else {
@@ -423,6 +425,9 @@
         header.style.top = '45px'
         header.style.backgroundColor = 'transparent'
       }
+      }
+      
+      
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
