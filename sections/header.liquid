@@ -414,7 +414,7 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if(scrollTop > 0) { 
-        header.style.backgroundColor = 'transparent';
+        console.log(captureColor)
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
