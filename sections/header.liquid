@@ -351,6 +351,7 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
+{% assign colorScheme = section.settings.color_scheme %}
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
@@ -378,9 +379,9 @@
         header.style.backgroundColor = "red"; // 
         header.style.color = "white"; // 
 });
-        console.log({{ section.settings.color_scheme }})
+        console.log({{ colorScheme }})
         header.addEventListener("mouseout", function() {
-        header.style.backgroundColor = `${{section.settings.color_scheme}}`
+        header.style.backgroundColor = {{section.settings.color_scheme}}
 });
 
   }
