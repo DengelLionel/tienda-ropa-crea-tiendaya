@@ -413,7 +413,8 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const header = document.querySelector('.header-wrapper ')
-              console.log({%- section.settings.color_scheme -%}) 
+      const a = {%- section.settings.color_scheme -%}
+      console.log(a)
 
       if(scrollTop > 100) { 
         header.style.top = 0
