@@ -415,7 +415,10 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const header = document.querySelector('.header-wrapper ')
-      console.log({{ aaa }}) 
+      
+{%- capture title -%}
+  console.log( {{ aaa }} )
+{%- endcapture %}
 
       if(scrollTop > 100) { 
         header.style.top = 0
