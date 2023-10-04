@@ -356,8 +356,6 @@
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
-      const elHeader = document.querySelector('.header-wrapper ')
-
     }
     connectedCallback() {
       this.header = document.querySelector('.section-header');
@@ -413,8 +411,10 @@
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const header = document.querySelector('.header-wrapper ')
+
       if(scrollTop > 0) { 
-        console.log(elHeader.style.backgroundColor) 
+        console.log(header.style.backgroundColor) 
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
