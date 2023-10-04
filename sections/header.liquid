@@ -357,7 +357,6 @@
     constructor() {
       super();  
 
-
     }
     connectedCallback() {
       this.header = document.querySelector('.section-header');
@@ -416,7 +415,7 @@
       const header = document.querySelector('.header-wrapper ')
       
 {%- capture title -%}
-  console.log( {{ aaa }} )
+  console.log( {{ section.settings.color_scheme }} )
 {%- endcapture %}
 
       if(scrollTop > 100) { 
