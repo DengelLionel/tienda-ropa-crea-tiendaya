@@ -357,7 +357,7 @@
     constructor() {
       super();
     }
-
+    const elHeader = document.querySelector('.header-wrapper ')
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'initial-transparent' || this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
@@ -366,7 +366,6 @@
       this.setHeaderHeight();
 
       window.matchMedia('(max-width: 990px)').addEventListener('change', this.setHeaderHeight.bind(this));
-      const captureColor = header.style.backgroundColor
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');
