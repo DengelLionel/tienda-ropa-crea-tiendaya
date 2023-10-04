@@ -356,8 +356,9 @@
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
+      const elHeader = document.querySelector('.header-wrapper ')
+
     }
-    const elHeader = document.querySelector('.header-wrapper ')
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'initial-transparent' || this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
