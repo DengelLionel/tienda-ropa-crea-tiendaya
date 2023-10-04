@@ -357,7 +357,7 @@
     constructor() {
       super();
     }
-    const elHeader = document.querySelector('.header-wrapper ')
+    this.elHeader = document.querySelector('.header-wrapper ')
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'initial-transparent' || this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
@@ -413,7 +413,7 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if(scrollTop > 0) { 
-        console.log(captureColor) 
+        console.log(elHeader.style.backgroundColor) 
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
