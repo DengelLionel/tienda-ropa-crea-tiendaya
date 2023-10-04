@@ -418,8 +418,9 @@
         header.style.top = 0
         heade.style.backgroundColor = 'transparent'
       } else {
+        console.log({%- section.settings.color_scheme -%})
         header.style.top = '50px'
-        header.style.backgroundColor = '{%- section.settings.color_scheme -%}'
+        header.style.backgroundColor = 
       }
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
