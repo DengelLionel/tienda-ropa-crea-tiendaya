@@ -51,16 +51,16 @@
         "template--21034285203752__d0a97e4b-2862-4e53-b7c2-dccb35cdbcbf-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/plantilla-banner-venta-moda_78532-325_1.jpg",
-            "heading": "Image slide",
+            "image": "shopify:\/\/shop_images\/plantilla-fin-temporada-oferta-especial-banner-venta-verano-foto_16148-1333_1.jpg",
+            "heading": "",
             "heading_size": "h2",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
+            "show_text_box": false,
+            "text_alignment": "right",
             "image_overlay_opacity": 0,
             "color_scheme": "",
             "text_alignment_mobile": "center"
