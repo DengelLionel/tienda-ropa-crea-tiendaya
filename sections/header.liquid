@@ -370,14 +370,14 @@
         this.header.classList.add('shopify-section-header-sticky');
               if(window.location.pathname === '/')  {
 
-        const header = document.querySelector('.header-wrapper ');
-        if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
-        header.style.backgroundColor = 'transparent';
-        header.style.width = '100%'
-        header.style.position = 'fixed';       
-        header.style.transition = 'all .1s ease-out'  
-      }
-              }
+          const header = document.querySelector('.header-wrapper ');
+          if (this.getAttribute('data-sticky-type') === 'initial-transparent') {
+          header.style.backgroundColor = 'transparent';
+          header.style.width = '100%'
+          header.style.position = 'fixed';       
+          header.style.transition = 'all .1s ease-out'  
+          }
+        }
       };
 
       this.currentScrollTop = 0;
