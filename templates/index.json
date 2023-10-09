@@ -100,6 +100,15 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "cf50630b-fa59-4cef-84cd-ead3ad928a67": {
+      "type": "slider-test",
+      "settings": {
+        "custom_liquid": "asd",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "9d27a721-75c3-4abb-a6bc-54eb1dbf1643": {
       "type": "collection-list",
       "blocks": {
@@ -172,6 +181,7 @@
   "order": [
     "image_banner",
     "d0a97e4b-2862-4e53-b7c2-dccb35cdbcbf",
+    "cf50630b-fa59-4cef-84cd-ead3ad928a67",
     "9d27a721-75c3-4abb-a6bc-54eb1dbf1643",
     "featured_collection"
   ]
