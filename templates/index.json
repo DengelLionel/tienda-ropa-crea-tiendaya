@@ -103,7 +103,8 @@
     "cf50630b-fa59-4cef-84cd-ead3ad928a67": {
       "type": "slider-test",
       "settings": {
-        "image": "shopify:\/\/shop_images\/231009_banner_desktop_15_1.png",
+        "image2": "shopify:\/\/shop_images\/02_1.png",
+        "image1": "shopify:\/\/shop_images\/231009_banner_desktop_15_1.png",
         "padding_top": 40,
         "padding_bottom": 52
       }
