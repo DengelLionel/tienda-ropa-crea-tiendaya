@@ -19,10 +19,14 @@
 <script defer>
   $(document).ready(function(){
     $('.slick-carousel').slick({
-      // Configuración de Slick Carousel
-      autoplay: true,
-      dots: true,
-      // Agrega más opciones según tus necesidades
+      slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    pauseOnFocus: false,
     });
   });
 </script>
