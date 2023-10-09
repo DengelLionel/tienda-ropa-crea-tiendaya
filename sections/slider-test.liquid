@@ -1,9 +1,13 @@
 <div>
+  {%- if section.settings.image != blank -%}
   {{
-        section.settings.image
-        | image_url: width: 100
-        | image_tag: loading: 'lazy', sizes: sizes, widths: widths
-      }}
+    section.settings.image
+    | image_url: width: '100%'
+    | image_tag: loading: 'lazy'
+  }}
+{%- else -%}
+  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+{%- endif -%}
 </div>
 
 {% schema %}
