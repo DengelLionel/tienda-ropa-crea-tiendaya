@@ -2,7 +2,7 @@
   {%- if section.settings.image != blank -%}
   {{
     section.settings.image
-    | image_url: width: 500
+    | image_url: width: 1000
     | image_tag: loading: 'lazy'
   }}
 {%- else -%}
@@ -55,7 +55,8 @@
 {% style %}
   .contenedor > img {
     width: 100% !important;
-    object-fit: contain 
+    object-fit: contain;
+    height: 100%;
   }
 {% endstyle %}
 
