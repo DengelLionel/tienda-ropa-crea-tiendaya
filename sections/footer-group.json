@@ -6,16 +6,7 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div class=\"slick-carousel\">\n  {% for i in (1..10) %}\n    <div>📦 Envío Gratis<\/div>\n  {% endfor %}\n<\/div>",
-        "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "f8ea331c-e6cb-4fb6-9ac8-10e1651a819d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "asdasd",
-        "color_scheme": "background-2",
+        "color_scheme": "inverse",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -40,7 +31,6 @@
   },
   "order": [
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37",
-    "f8ea331c-e6cb-4fb6-9ac8-10e1651a819d",
     "footer"
   ]
 }
