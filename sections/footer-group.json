@@ -5,7 +5,7 @@
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<ul style=\"display: flex; flex-direction: column; align-items: center;\">\n  {% assign items = \"Elemento 1, Elemento 2, Elemento 3\" | split: \", \" %}\n  {% for item in items %}\n    <li>{{ item }}<\/li>\n  {% endfor %}\n<\/ul>",
+        "custom_liquid": "<div style=\"display: flex; justify-content: space-between;\">\n  <ul>\n    {% assign items1 = \"Elemento 1, Elemento 2, Elemento 3\" | split: \", \" %}\n    {% for item in items1 %}\n      <li>{{ item }}<\/li>\n    {% endfor %}\n  <\/ul>\n\n  <ul>\n    {% assign items2 = \"Elemento 4, Elemento 5, Elemento 6\" | split: \", \" %}\n    {% for item in items2 %}\n      <li>{{ item }}<\/li>\n    {% endfor %}\n  <\/ul>\n\n  <ul>\n    {% assign items3 = \"Elemento 7, Elemento 8, Elemento 9\" | split: \", \" %}\n    {% for item in items3 %}\n      <li>{{ item }}<\/li>\n    {% endfor %}\n  <\/ul>\n<\/div>",
         "color_scheme": "background-2",
         "padding_top": 40,
         "padding_bottom": 52
