@@ -16,12 +16,16 @@
     {{ section.settings.custom_liquid }}
   </div>
 </div>
-{% javascript %}  
-    
-    $(document).ready(function(){
-   
+<script defer>
+  $(document).ready(function(){
+    $('.slick-carousel').slick({
+      // Configuración de Slick Carousel
+      autoplay: true,
+      dots: true,
+      // Agrega más opciones según tus necesidades
+    });
   });
-{% endjavascript %}
+</script>
 {% schema %}
 {
   "name": "t:sections.custom-liquid.name",
