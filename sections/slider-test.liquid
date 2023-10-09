@@ -2,7 +2,7 @@
   {%- if section.settings.image != blank -%}
   {{
     section.settings.image
-    | image_url: width: '100%'
+    | image_url: width: 500
     | image_tag: loading: 'lazy'
   }}
 {%- else -%}
