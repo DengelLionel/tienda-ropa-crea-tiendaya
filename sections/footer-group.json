@@ -5,7 +5,7 @@
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"slider\">\n  <ul class=\"slider-list\">\n    {% for product in products %}\n      <li class=\"slider-item\">\n        <img src=\"https:\/\/topitop.vteximg.com.br\/arquivos\/231009_banner_desktop_21.png?v=638323756541170000\" alt=\"{{ product.title }}\">\n        <h3>{{ product.title }}<\/h3>\n        <p>{{ product.description }}<\/p>\n      <\/li>\n    {% endfor %}\n  <\/ul>\n<\/div>",
+        "custom_liquid": "<div class=\"slider\">\n  <ul class=\"slider-list\">\n    {% for product in products %}\n      <li class=\"slider-item\">\n        <img src=\"https:\/\/topitop.vteximg.com.br\/arquivos\/231009_banner_desktop_21.png?v=638323756541170000\" alt=\"asd\">\n        <h3>{{ product.title }}<\/h3>\n        <p>{{ product.description }}<\/p>\n      <\/li>\n    {% endfor %}\n  <\/ul>\n<\/div>",
         "color_scheme": "background-2",
         "padding_top": 40,
         "padding_bottom": 52
