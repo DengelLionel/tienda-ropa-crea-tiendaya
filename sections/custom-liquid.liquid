@@ -22,10 +22,13 @@
   $(document).ready(function(){
     $('.slick-carousel').slick({
   slidesToShow: 7,
-  slidesToScroll: 6,
+  slidesToScroll: 1,
   autoplay: true,
     autoplaySpeed: 0,
-    speed: 5000,  responsive: [
+          cssEase: 'linear',
+
+    speed: 5000,  
+      responsive: [
     {
       breakpoint: 1024,
       settings: {
