@@ -64,11 +64,14 @@
 {% endschema %}
 
 {% style %}
-  .contenedor > img {
-    width: 100% !important;
-    object-fit: contain;
-    height: 100%;
-  }
+  .contenedor {
+  display: flex; 
+}
+
+.imagen {
+  flex: 1; 
+  max-width: 50%; 
+}
 {% endstyle %}
 
 {% javascript %}
