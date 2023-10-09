@@ -1325,6 +1325,17 @@
         "name": "Imagen con texto"
       }
     },
+    "slider-test": {
+      "name": "Prueba deslizador",
+      "settings": {
+        "image": {
+          "label": "Primera imagen"
+        },
+        "image_2": {
+          "label": "Segunda imagen"
+        }
+      }
+    },
     "main-article": {
       "name": "Artículo de blog",
       "blocks": {
