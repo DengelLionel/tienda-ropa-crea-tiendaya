@@ -14,6 +14,20 @@
     {%- endif -%}
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const imagenes = document.querySelectorAll(".imagen");
+  let index = 0;
+
+  function cambiarImagen() {
+    imagenes[index].classList.remove("active");
+    index = (index + 1) % imagenes.length;
+    imagenes[index].classList.add("active");
+  }
+
+  setInterval(cambiarImagen, 5000); // Cambiar imagen cada 5 segundos (ajusta el tiempo según tus preferencias)
+});
+</script>
 {% schema %}
   {
   "name": "t:sections.slider-test.name",
