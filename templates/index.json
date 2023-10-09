@@ -105,8 +105,8 @@
       "settings": {
         "image1": "shopify:\/\/shop_images\/231009_banner_desktop_15_1.png",
         "image2": "shopify:\/\/shop_images\/231009_banner_desktop_21_1.png",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "9d27a721-75c3-4abb-a6bc-54eb1dbf1643": {
