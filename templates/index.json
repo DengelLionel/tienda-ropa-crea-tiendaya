@@ -103,7 +103,7 @@
     "cf50630b-fa59-4cef-84cd-ead3ad928a67": {
       "type": "slider-test",
       "settings": {
-        "custom_liquid": "asd",
+        "custom_liquid": "",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
