@@ -103,8 +103,7 @@
     "cf50630b-fa59-4cef-84cd-ead3ad928a67": {
       "type": "slider-test",
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/promocion-plantilla-banner-moderno-mega-venta_501916-474_1.jpg",
         "padding_top": 40,
         "padding_bottom": 52
       }
