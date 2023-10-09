@@ -1,4 +1,10 @@
-<div>asdsdasdas</div>
+<div>
+  {{
+        section.settings.image
+        | image_url: width: 1500
+        | image_tag: loading: 'lazy', sizes: sizes, widths: widths
+      }}
+</div>
 
 {% schema %}
   {
