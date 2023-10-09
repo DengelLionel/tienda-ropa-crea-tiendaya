@@ -1,14 +1,14 @@
 <div class="slider-test">
   <div class="imagen active">
     {%- if section.settings.image1 != blank -%}
-      <img src="{{ section.settings.image1 | img_url: '1000x' }}" alt="Imagen 1" loading="lazy">
+      <img src="{{ section.settings.image1 | img_url: '100%' }}" alt="Imagen 1" loading="lazy">
     {%- else -%}
       {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
   </div>
   <div class="imagen-test">
     {%- if section.settings.image2 != blank -%}
-      <img src="{{ section.settings.image2 | img_url: '1000x' }}" alt="Imagen 2" loading="lazy">
+      <img src="{{ section.settings.image2 | img_url: '100%' }}" alt="Imagen 2" loading="lazy">
     {%- else -%}
       {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
