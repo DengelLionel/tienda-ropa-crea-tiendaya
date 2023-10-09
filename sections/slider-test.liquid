@@ -64,13 +64,25 @@
 {% endschema %}
 
 {% style %}
-  .contenedor {
-  display: flex; 
+  .slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .imagen {
-  flex: 1; 
-  max-width: 50%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.imagen.active {
+  opacity: 1;
 }
 {% endstyle %}
 
