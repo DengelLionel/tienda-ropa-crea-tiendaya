@@ -14,10 +14,11 @@
   }
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">asdasd
+  <div class="section-{{ section.id }}-padding">
     {{ section.settings.custom_liquid }}
   </div>
 </div>
+
 <script defer>
   $(document).ready(function(){
     $('.slick-carousel').slick({
@@ -44,6 +45,7 @@
 });
   });
 </script>
+
 {% schema %}
 {
   "name": "t:sections.custom-liquid.name",
