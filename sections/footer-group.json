@@ -5,8 +5,8 @@
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style={color:red}>asd<\/div>",
-        "color_scheme": "",
+        "custom_liquid": "",
+        "color_scheme": "background-2",
         "padding_top": 40,
         "padding_bottom": 52
       }
