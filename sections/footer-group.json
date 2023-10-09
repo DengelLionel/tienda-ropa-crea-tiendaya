@@ -5,7 +5,7 @@
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% assign urlImagenExterna = \"https:\/\/topitop.vteximg.com.br\/arquivos\/231009_banner_desktop_21.png?v=638323756541170000\" %}\n<img src=\"{{ urlImagenExterna }}\" alt=\"Descripción de la imagen\">",
+        "custom_liquid": "<div class=\"slick-carousel\">\n  {% for i in (1..10) %}\n    <div>Envío Gratis<\/div>\n  {% endfor %}\n<\/div>",
         "color_scheme": "background-2",
         "padding_top": 40,
         "padding_bottom": 52
