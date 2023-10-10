@@ -92,10 +92,66 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "7ec17984-cbeb-4198-955b-487d8902f7fa": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/retrato-hombre-blanco-aislado_53876-40306_1.jpg",
+            "title": "Usuario 1",
+            "text": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/retrato-mujer-caucasica-aislado-sobre-fondo-estudio-rosa-coral-copyspace_155003-46026_1.jpg",
+            "title": "Usuario 2",
+            "text": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-1",
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-2",
+        "template--21034285105448__7ec17984-cbeb-4198-955b-487d8902f7fa-column-3"
+      ],
+      "settings": {
+        "title": "Reseñas",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "7ec17984-cbeb-4198-955b-487d8902f7fa"
   ]
 }
