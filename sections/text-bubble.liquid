@@ -17,13 +17,13 @@ const componente = document.getElementById('text-bubble');
   function ejecutarAccion() {
     setTimeout(() => {
       componente.style.display = 'none'
-    }, 5000)
-  setTimeout(ejecutarAccion, 20000)
+    }, 2000)
+  setTimeout(ejecutarAccion, 10000)
 }
 if (componente) {
   setTimeout(() => {
     ejecutarAccion();
-  }, 20000);
+  }, 5000);
 }
 {% endjavascript %}
 {% schema %}
