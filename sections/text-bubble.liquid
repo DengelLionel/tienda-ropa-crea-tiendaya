@@ -14,7 +14,9 @@
 
   function ejecutarAccion() {
     const componente = document.getElementByClassName('text-bubble')
-  
+    setTimeout(() => {
+      componente.style.display = 'none'
+    }, 5000)
   setTimeout(ejecutarAccion, 20000)
 }
 
