@@ -11,16 +11,20 @@
   }
 {% endstyle %}
 {% javascript %}
+  
+const componente = document.getElementById('text-bubble');
 
   function ejecutarAccion() {
-    const componente = document.getElementById('text-bubble')
     setTimeout(() => {
       componente.style.display = 'none'
     }, 5000)
   setTimeout(ejecutarAccion, 20000)
 }
-
-ejecutarAccion()
+if (componente) {
+  setTimeout(() => {
+    ejecutarAccion();
+  }, 20000);
+}
 {% endjavascript %}
 {% schema %}
   {
