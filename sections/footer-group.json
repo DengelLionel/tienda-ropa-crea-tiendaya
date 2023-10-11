@@ -2,6 +2,13 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "161964e2-1f44-4406-ad79-abd4c5d3fa3b": {
+      "type": "text-bubble",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37": {
       "type": "custom-liquid",
       "settings": {
@@ -30,6 +37,7 @@
     }
   },
   "order": [
+    "161964e2-1f44-4406-ad79-abd4c5d3fa3b",
     "c198fbae-6eaf-4f8c-ab61-97215e0e7d37",
     "footer"
   ]
