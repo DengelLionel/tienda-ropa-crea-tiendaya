@@ -1,4 +1,4 @@
-<div class='text-bubble'>
+<div id='text-bubble'>
   
 </div>
 
@@ -13,9 +13,9 @@
 {% javascript %}
 
   function ejecutarAccion() {
-    const componente = document.getElementsByClassName('text-bubble')
+    const componente = document.getElementById('text-bubble')
     setTimeout(() => {
-      componente[0].style.display = 'none'
+      componente.style.display = 'none'
     }, 5000)
   setTimeout(ejecutarAccion, 20000)
 }
