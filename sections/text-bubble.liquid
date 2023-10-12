@@ -22,11 +22,12 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
   
 
   function ejecutarAccion() {
+  
     fetch(apiUrl)
       .then((response) => response.json())
       .then((products) => {
-        console.log(products)
-            componente.querySelector('p').innerText = 'asd'
+        const numeroAleatorio = Math.floor(Math.random() * products.length);            
+        componente.querySelector('p').innerText = 'asd'
 
       })
       .catch((error) => {
