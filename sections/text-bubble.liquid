@@ -18,9 +18,16 @@
 {% javascript %}
   
 const componente = document.getElementById('text-bubble');
-
+const apiUrl = window.Shopify.routes.root + 'products.json';
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((products) => {
+    console.log('Información de todos los productos:', products);
+  })
+  .catch((error) => {
+    console.error('Error al obtener información de los productos:', error);
+  });
   function ejecutarAccion() {
-    console.log( {{ section.settings.collection }} )  
     console.log('asd')
     componente.style.display = 'flex'
     setTimeout(() => {
