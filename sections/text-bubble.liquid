@@ -51,20 +51,19 @@ const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
   
 
-  async function ejecutarAccion() {
+async function ejecutarAccion() {
   
-      fetch(apiUrl)
-      const response = await fetch(apiUrl);
-        if (!response.ok) {
-          throw new Error('No se pudo obtener la información de los productos');
-        }
-        const data = await response.json();
-        const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
-        componente.querySelector('div:nth-of-type(1) > img').src = data.products[numeroAleatorio].images[0].src
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(2)').innerText = data.products[numeroAleatorio].title
+    fetch(apiUrl)
+    const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error('No se pudo obtener la información de los productos');
+      }
+      const data = await response.json();
+      const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
+      componente.querySelector('div:nth-of-type(1) > img').src = data.products[numeroAleatorio].images[0].src
+      componente.querySelector('div:nth-of-type(2) > p:nth-of-type(2)').innerText = data.products[numeroAleatorio].title
 
-        let Texto = null
-        const esMes = Math.floor(Math.random() * 2) === 0;
+      const esMes = Math.floor(Math.random() * 2) === 0;
         if (esMes) {
         const numeroMeses = Math.floor(Math.random() * 12);
         componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)') = `hace ${numeroMeses} meses`
@@ -73,7 +72,7 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
         componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)') = `hace ${numeroDias} días` 
         }
  
-    
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)') = 'Kuasi'
       
     componente.style.display = 'flex'
     setTimeout(() => {
