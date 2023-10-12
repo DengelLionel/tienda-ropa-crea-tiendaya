@@ -24,9 +24,12 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
 
   async function ejecutarAccion() {
   
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
+      fetch(apiUrl)
+      const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error('No se pudo obtener la información de los productos');
+        }
+        const data = await response.json();
         const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
         componente.querySelector('p').innerText = data.products[numeroAleatorio].title
         componente.querySelector('div > img').src = data.products[numeroAleatorio].images[0].src
