@@ -57,8 +57,10 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
           Texto = `hace ${numeroMeses} meses`
         } else {
         const numeroDias = Math.floor(Math.random() * 29) + 1;
+          Texto = `hace ${numeroDía} días`
+
         }
-        componente.querySelector('div:nth-of-type(2)').innerText = `Compró ${data.products[numeroAleatorio].title}
+        componente.querySelector('div:nth-of-type(2)').innerText = `Compró ${data.products[numeroAleatorio].title} ${Texto}`
 
     
       
