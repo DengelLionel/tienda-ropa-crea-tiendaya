@@ -27,7 +27,7 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
       .then((response) => response.json())
       .then((products) => {
         const numeroAleatorio = Math.floor(Math.random() * products.length);            
-        componente.querySelector('p').innerText = 'asd'
+        componente.querySelector('p').innerText = products[0].tittle
 
       })
       .catch((error) => {
