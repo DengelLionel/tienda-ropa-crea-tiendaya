@@ -1,7 +1,7 @@
 <div id='text-bubble'>
-  <di>
+  <div>
     <img src='' alt='product-show' />
-  </di>
+  </div>
   <p></p>
 </div>
 
@@ -29,8 +29,8 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
       .then((data) => {
         console.log(data)
         const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
-        console.log(data.products[0]['images'][0])
         componente.querySelector('p').innerText = data.products[0].title
+        componente.querySelector('div > img').src = data.products[0].images[0].src
 
       })
       .catch((error) => {
