@@ -19,10 +19,11 @@
   
 const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
+const dataForTextBubble = null
 fetch(apiUrl)
   .then((response) => response.json())
   .then((products) => {
-    console.log('Información de todos los productos:', products);
+    const dataForTextBubble = products
   })
   .catch((error) => {
     console.error('Error al obtener información de los productos:', error);
