@@ -29,17 +29,18 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
 fetch(apiUrl)
   .then((response) => response.json())
   .then((products) => {
+    if (componente) {
+  setTimeout(() => {
+    ejecutarAccion();
+  }, 5000);
+}
   })
   .catch((error) => {
     console.error('Error al obtener información de los productos:', error);
   });
 
 
-if (componente) {
-  setTimeout(() => {
-    ejecutarAccion();
-  }, 5000);
-}
+
 {% endjavascript %}
 {% schema %}
   {
