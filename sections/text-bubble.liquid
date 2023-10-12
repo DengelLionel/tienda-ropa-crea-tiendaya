@@ -19,7 +19,7 @@
   
 const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
-let dataForTextBubble = null
+  
 fetch(apiUrl)
   .then((response) => response.json())
   .then((products) => {
@@ -29,7 +29,6 @@ fetch(apiUrl)
     console.error('Error al obtener información de los productos:', error);
   });
 
-console.log(dataForTextBubble)
   function ejecutarAccion() {
     componente.style.display = 'flex'
     setTimeout(() => {
@@ -42,6 +41,7 @@ if (componente) {
     ejecutarAccion();
   }, 5000);
 }
+  
 {% endjavascript %}
 {% schema %}
   {
