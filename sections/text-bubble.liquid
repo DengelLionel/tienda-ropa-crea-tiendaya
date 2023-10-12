@@ -105,7 +105,7 @@ async function ejecutarAccion() {
       const esMes = Math.floor(Math.random() * 2) === 0;
         if (esMes) {
         const numeroMeses = Math.floor(Math.random() * 11)+1;
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroMeses} meses`
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroMeses === 0 ? numeroMeses + ' mes': numeroMeses + ' meses'}`
         } else {
         const numeroDias = Math.floor(Math.random() * 28)+1;
         componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroDias} días`  
