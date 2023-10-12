@@ -101,7 +101,7 @@ async function ejecutarAccion() {
       }
       const data = await response.json();
       const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
-      componente.querySelector('div:nth-of-type(1) > img').src = data.products[0].images[0].src
+      componente.querySelector('div:nth-of-type(1) > img').src = data.products[numeroAleatorio].images[0].src
       componente.querySelector('div:nth-of-type(2) > p:nth-of-type(2)').innerText = `Compró ${data.products[numeroAleatorio].title}`
 
       const esMes = Math.floor(Math.random() * 2) === 0;
