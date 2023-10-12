@@ -30,7 +30,7 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
         console.log(data)
         const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
         componente.querySelector('div > img').src = data.products[0]['images'][0].src
-
+        console.log(data.products[0]['images'][0])
         componente.querySelector('p').innerText = data.products[0].title
 
       })
