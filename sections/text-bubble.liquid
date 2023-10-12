@@ -115,7 +115,7 @@ async function ejecutarAccion() {
         const apellidoAleatorio = apellidosPeru[Math.floor(Math.random() * apellidosPeru.length)];
         const combinacionAleatoria = `${nombreAleatorio} ${apellidoAleatorio}`;
   
-        const numeroAleatorio = Math.floor(Math.random() * departamentosPeru.length);
+        const numeroAleatorio = Math.floor(Math.random() * lugar.length);
         const lugarAleatorio = lugar[numeroAleatorio];
         componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)').innerText = `${combinacionAleatoria} en ${lugarAleatorio}`
       
