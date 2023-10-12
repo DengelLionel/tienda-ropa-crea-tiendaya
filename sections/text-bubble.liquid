@@ -53,10 +53,10 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
         let Texto = null
         const esMes = Math.floor(Math.random() * 2) === 0;
         if (esMes) {
-        const numeroMeses = Math.floor(Math.random() * 12) + 1;
+        const numeroMeses = Math.floor(Math.random() * 12);
           Texto = `hace ${numeroMeses} meses`
         } else {
-        const numeroDias = Math.floor(Math.random() * 29) + 1;
+        const numeroDias = Math.floor(Math.random() * 29);
           Texto = `hace ${numeroDias} días` 
 
         }
