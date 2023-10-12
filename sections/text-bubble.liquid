@@ -79,6 +79,17 @@ const apellidosPeru = [
   'Fernández', 'Díaz', 'Mendoza', 'López', 'Martínez'
 ];
 
+const lugares = [
+  'Amazonas', 'Áncash', 'Apurímac', 'Arequipa', 'Ayacucho',
+  'Cajamarca', 'Callao', 'Cusco', 'Huancavelica', 'Huánuco',
+  'Ica', 'Junín', 'La Libertad', 'Lambayeque', 'Lima',
+  'Loreto', 'Madre de Dios', 'Moquegua', 'Pasco', 'Piura',
+  'Puno', 'San Martín', 'Tacna', 'Tumbes', 'Ucayali','Estados Unidos', 'Canadá', 'México', 'Brasil', 'Argentina',
+  'Colombia', 'Chile', 'Venezuela', 'Perú', 'Ecuador',
+  'Bolivia', 'Uruguay', 'Paraguay', 'Guatemala', 'Cuba',
+  'Honduras', 'El Salvador', 'Nicaragua', 'Costa Rica', 'Panamá'
+];
+
 async function ejecutarAccion() {
   
     fetch(apiUrl)
@@ -99,11 +110,14 @@ async function ejecutarAccion() {
         const numeroDias = Math.floor(Math.random() * 29);
         componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroDias} días`  
         }
+  
         const nombreAleatorio = nombresPeru[Math.floor(Math.random() * nombresPeru.length)];
         const apellidoAleatorio = apellidosPeru[Math.floor(Math.random() * apellidosPeru.length)];
-
         const combinacionAleatoria = `${nombreAleatorio} ${apellidoAleatorio}`;
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)').innerText = `${combinacionAleatoria}`
+  
+        const numeroAleatorio = Math.floor(Math.random() * departamentosPeru.length);
+        const lugarAleatorio = lugar[numeroAleatorio];
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)').innerText = `${combinacionAleatoria} en ${lugarAleatorio}`
       
     componente.style.display = 'flex'
     setTimeout(() => {
