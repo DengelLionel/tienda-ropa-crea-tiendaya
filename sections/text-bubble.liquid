@@ -19,24 +19,22 @@
   
 const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
-let dataForTextBubble = null
-fetch(apiUrl)
-  .then((response) => response.json())
-  .then((products) => {
-    dataForTextBubble = products
-  })
-  .catch((error) => {
-    console.error('Error al obtener información de los productos:', error);
-  });
-
-console.log(dataForTextBubble)
-  function ejecutarAccion() {
+    function ejecutarAccion() {
     componente.style.display = 'flex'
     setTimeout(() => {
       componente.style.display = 'none'
     }, 4000)
   setTimeout(ejecutarAccion, 10000)
 }
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((products) => {
+  })
+  .catch((error) => {
+    console.error('Error al obtener información de los productos:', error);
+  });
+
+
 if (componente) {
   setTimeout(() => {
     ejecutarAccion();
