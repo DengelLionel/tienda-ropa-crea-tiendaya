@@ -22,7 +22,7 @@ const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
   
 
-  function ejecutarAccion() {
+  async function ejecutarAccion() {
   
     fetch(apiUrl)
       .then((response) => response.json())
