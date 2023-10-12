@@ -49,7 +49,6 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
         }
         const data = await response.json();
         const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
-        componente.querySelector('div:nth-of-type(2)').innerText = data.products[numeroAleatorio].title
         componente.querySelector('div:nth-of-type(1) > img').src = data.products[numeroAleatorio].images[0].src
         let Texto = "Alguien"
         const esMes = Math.floor(Math.random() * 2) === 0;
@@ -59,6 +58,8 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
         } else {
         const numeroDias = Math.floor(Math.random() * 29) + 1;
         }
+        componente.querySelector('div:nth-of-type(2)').innerText = data.products[numeroAleatorio].title
+
     
       
     componente.style.display = 'flex'
