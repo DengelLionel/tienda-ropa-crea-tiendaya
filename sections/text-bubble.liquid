@@ -66,13 +66,13 @@ async function ejecutarAccion() {
       const esMes = Math.floor(Math.random() * 2) === 0;
         if (esMes) {
         const numeroMeses = Math.floor(Math.random() * 12);
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)')innerText = `hace ${numeroMeses} meses`
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroMeses} meses`
         } else {
         const numeroDias = Math.floor(Math.random() * 29);
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)')innerText = `hace ${numeroDias} días`  
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(3)').innerText = `hace ${numeroDias} días`  
         }
  
-        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)')innerText = 'Kuasi'
+        componente.querySelector('div:nth-of-type(2) > p:nth-of-type(1)').innerText = 'Kuasi'
       
     componente.style.display = 'flex'
     setTimeout(() => {
