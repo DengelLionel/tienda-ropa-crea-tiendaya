@@ -19,7 +19,7 @@
   
 const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
-var dataForTextBubble = null
+let dataForTextBubble = null
 fetch(apiUrl)
   .then((response) => response.json())
   .then((products) => {
