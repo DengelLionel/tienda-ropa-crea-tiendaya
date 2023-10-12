@@ -19,7 +19,7 @@
   
 const componente = document.getElementById('text-bubble');
 const apiUrl = window.Shopify.routes.root + 'products.json';
-    function ejecutarAccion() {
+    function ejecutarAccion(products) {
     componente.style.display = 'flex'
     setTimeout(() => {
       componente.style.display = 'none'
