@@ -28,8 +28,8 @@ const apiUrl = window.Shopify.routes.root + 'products.json';
       .then((response) => response.json())
       .then((data) => {
         const numeroAleatorio = Math.floor(Math.random() * data.products.length);  
-        componente.querySelector('p').innerText = data.products[0].title
-        componente.querySelector('div > img').src = data.products[0].images[anumeroAleatorio].src
+        componente.querySelector('p').innerText = data.products[numeroAleatorio].title
+        componente.querySelector('div > img').src = data.products[numeroAleatorio].images[0].src
 
       })
       .catch((error) => {
