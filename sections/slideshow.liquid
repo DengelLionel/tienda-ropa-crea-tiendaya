@@ -25,8 +25,58 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- style -%}
+  .h-features-custom .slideshow__media.banner__media.media > img {
+    filter: brightness(0.7);
+  }
+  .h-features-custom .banner__heading.inline-richtext.h1, .h-features-custom .banner__text.rte {
+    color: white
+  }
+
+  .h-features-custom {
+    justify-content: flex-end
+  }
+  .h-features-custom .slideshow__controls.slideshow__controls--top.slider-buttons.no-js-hidden {
+    display: flex;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    z-index: 4
+  }
+  .h-features-custom .slider-counter.slider-counter--dots {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    color: white
+  }
+  .h-features-custom .slider-counter.slider-counter--dots > button > span {
+    border: 1px solid white
+  }
+  .h-features-custom .banner__buttons {
+    z-index: 5;
+  }
+  .slider-button.slider-button--prev {
+    position: absolute;
+    top: -625%;
+    color: white;
+    left: 0;
+    transform: translateY(-50%)
+
+  }
+  .slider-button.slider-button--next {
+    color: white;
+    top: -625%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute
+
+  }
+
+
+{%- endstyle -%}
+
 <slideshow-component
-  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
+  class="h-features-custom slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
@@ -81,6 +131,7 @@
           type="button"
           class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
           aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
+          style="display:none"
         >
           {%- render 'icon-pause' -%}
           {%- render 'icon-play' -%}
