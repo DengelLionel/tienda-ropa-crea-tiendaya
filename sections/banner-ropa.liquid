@@ -1,0 +1,197 @@
+{{ 'banner-ropa.css' | asset_url | stylesheet_tag }}
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+{%- liquid
+ assign img_predeterminado="https://res.cloudinary.com/darps1cta/image/upload/v1681937216/sitioweb/5_razones_por_las_que_tu_negocio_necesita_una_tienda_virtual_en_Shopify_elugcl.jpg"
+
+ -%}
+ 
+<section class='slider-banner-ropa' >
+
+
+
+      {%- for block in section.blocks -%}
+   
+
+        {% if block.settings.image_desktop  %}
+        {% if block.settings.link_banner_ropa %}
+        
+    <a href="{{block.settings.link_banner_ropa}}" class="desktop-image">
+      {{ block.settings.image_desktop | image_url: width: 1280, height: 100 | image_tag: sizes: "(max-width: 768px) 40vw, (max-width: 1280px) 720px, (max-width: 1920px) 1280px, (max-width: 2560px) 1920px, (max-width: 3840px) 2560px", class: "desktop-image" }}
+    </a>
+  
+
+    {% else %}
+   
+    <div class="desktop-image" >
+      {{ block.settings.image_desktop | image_url: width: 1280, height: 100 | image_tag: sizes: "(max-width: 768px) 40vw, (max-width: 1280px) 720px, (max-width: 1920px) 1280px, (max-width: 2560px) 1920px, (max-width: 3840px) 2560px", class: "desktop-image" }}
+    </div>
+
+    
+  {% endif %}
+  {% else %}
+  
+    <img
+      class="banner-predeterminado desktop-image"
+      alt="predeterminado desk"
+      src={{img_predeterminado}}>
+   
+  {% endif %}
+{% endfor %}      
+     
+</section>
+<section class='slider-banner-ropa-mobil'>
+  {% for block in section.blocks %}
+  {% comment %} MOBIL {% endcomment %}
+  {% if block.settings.image_mobile  %}
+    {% if block.settings.link_banner_ropa %}
+   
+    <a href="{{block.settings.link_banner_ropa}}" class="mobile-image">
+      {{ block.settings.image_mobile | image_url: width: 400, height: 100 | image_tag: width: 360, height: 100, sizes: "(min-width: 750px) 100vw, (min-width: 575px) calc(50vw - 300px), (min-width: 375px) calc(25vw - 150px)", class: "mobile-image" }}
+    </a>
+ 
+    {% else %}
+    
+    <div class="mobile-image">
+      {{ block.settings.image_mobile | image_url: width: 400, height: 100 | image_tag: width: 360, height: 100, sizes: "(min-width: 750px) 100vw, (min-width: 575px) calc(50vw - 300px), (min-width: 375px) calc(25vw - 150px)", class: "mobile-image" }}
+    </div>
+  
+    {% endif %}
+    {% else %}
+   
+    <img
+      class="banner-predeterminado mobile-image"
+      alt="predeterminado mov"
+      src={{img_predeterminado}}>
+    
+  {% endif %}
+
+        {% endfor %}
+</section>
+
+<script>
+  /*
+const mobileImages = document.querySelectorAll('.mobile-image');
+
+// Create a variable to track the current image index
+let currentImageIndex = 0;
+
+// Create a function to slide to the next image
+function slideToNextImage() {
+  // Increment the current image index
+  currentImageIndex++;
+
+  // If the current image index is greater than or equal to the number of mobile images, reset it to 0
+  if (currentImageIndex >= mobileImages.length) {
+    currentImageIndex = 0;
+  }
+
+  // Update the visibility of the mobile images
+  mobileImages.forEach((image, index) => {
+    if (index === currentImageIndex) {
+      image.style.display = 'block';
+      image.src = 'https://res.cloudinary.com/darps1cta/image/upload/v1681937216/sitioweb/5_razones_por_las_que_tu_negocio_necesita_una_tienda_virtual_en_Shopify_elugcl.jpg';
+    } else {
+      image.style.opacity = 0;
+    }
+  });
+
+  // Set a timer to run the slideToNextImage() function again
+  setTimeout(slideToNextImage, 3000);
+}
+
+// Add a click event listener to the next button
+//document.querySelector('.next-button').addEventListener('click', slideToNextImage);
+
+// Call the slideToNextImage() function once to initialize the slider
+slideToNextImage();
+  */
+  
+   $('.slider-banner-ropa').slick({
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Esto activa el modo autoplay
+    autoplaySpeed: 2000 // Ajusta la velocidad del autoplay en milisegundos
+  });
+  
+    $('.slider-banner-ropa-mobil').slick({
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Esto activa el modo autoplay
+    autoplaySpeed: 2000 // Ajusta la velocidad del autoplay en milisegundos
+  });
+
+  
+</script>
+
+{% comment %}
+Banner ropa - Fin
+{% endcomment %}{% schema %}
+  {
+    "name": "Banner ropa",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "text",
+        "id": "texto_titulo",
+        "label": "Titulo (Aun no esta activo para usarlo)"
+
+
+      }
+     
+],
+      "blocks": [
+    {
+      "type":"announcement",
+      "name":"Banner +",
+      "limit":4,
+      "settings": [
+        {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Imagen para desktop"
+
+
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Imagen para mobil"
+
+      },
+      {
+      "type":"url",
+      "id":"link_banner_ropa",
+      "label":"Link de banner"
+      }
+      ]
+    }
+
+      ],
+    "presets": [
+      {
+        "name": "Banner ropa",
+        "blocks": [
+          {
+            "type": "announcement"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
