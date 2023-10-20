@@ -2,7 +2,26 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .collection-hero--with-image .collection-hero__image-container.media.gradient {
+    margin: 0
+  }
+  .collection-hero--with-image .collection-hero__text-wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2
+  }
+  .collection-hero--with-image .collection-hero__inner.page-width.scroll-trigger.animate--fade-in {
+    padding: 0;
+    position: relative;
+  }
+  
   @media screen and (max-width: 749px) {
+
+    
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
     }
