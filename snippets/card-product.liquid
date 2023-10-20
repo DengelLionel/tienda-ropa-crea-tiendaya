@@ -99,10 +99,17 @@
                 >
               {%- endif -%}
             </div>
+          {% # % descuento %}
+          {% if card_product.compare_at_price > card_product.price %}
+          
+          <div style="position: absolute; top: 10px; left: 10px; background-color: red; color: white; border-radius: 5px; font-weight: 900; padding: .5rem; letter-spacing: .5px; font-family: sans-serif; font-size: 12px">AHORRA {{ card_product.compare_at_price | minus: card_product.price | times: 100.0 | divided_by: card_product.compare_at_price | round }}% </div>
+          
+          {% endif %} 
           </div>
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
+            
             <h3
               class="card__heading"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
@@ -112,7 +119,7 @@
               <a
                 href="{{ card_product.url }}"
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-                class="full-unstyled-link"
+                class="producto-titulo"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
                 {{ card_product.title | escape }}
@@ -147,14 +154,17 @@
             {% endif %}
           >
             <a
+              style="text-decoration:none;"
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
-              class="full-unstyled-link"
+              class="producto-titulo"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
               {{ card_product.title | escape }}
             </a>
           </h3>
+          
+  
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -198,7 +208,7 @@
                 </span>
               </p>
             {%- endif -%}
-
+            
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">
@@ -385,3 +395,4 @@
     </div>
   </div>
 {%- endif -%}
+
