@@ -1,0 +1,83 @@
+.banner-ropa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 100%;
+
+}
+
+.banner-image {
+    margin: 0;
+}
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+    /* Ajusta el color del texto según tu esquema de color */
+
+}
+
+.banner-content h1,
+.banner-content h2,
+.banner-content h3 {
+    /* Añade estilos para el encabezado según la configuración "heading_size" */
+}
+
+.banner-content p {
+    /* Añade estilos para el texto según la configuración "text_style" */
+}
+
+.buttons {}
+
+.button {
+    
+  background-color: #239DD6;
+    color: #fff;
+    /* Cambia el color del texto según tu esquema de color */
+    text-decoration: none;
+ 
+
+}
+
+.button-secondary {
+    background-color: #45617D;
+    /* Cambia el color de fondo del botón secundario */
+}
+
+/* Añade estilos adicionales según sea necesario */
+.desktop-image {
+    display: block;
+    width: 100%;
+
+
+}
+
+.banner-predeterminado {
+    width: 100%;
+    height: 100px;
+}
+
+/* Estilos para pantallas móviles y tabletas */
+@media (max-width: 767px) {
+    
+    .desktop-image, .slider-banner-ropa {
+        display: none !important;
+        /* Ocultar imagen de escritorio en pantallas móviles y tabletas */
+    }
+
+    .slider-banner-ropa-mobil {
+      display: block !important
+    }
+    .mobile-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media (min-width: 767px) {
+  .mobile-image, .slider-banner-ropa-mobil {
+    display: none !important;
+}
