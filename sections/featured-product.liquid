@@ -113,7 +113,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- else -%}
-              <div class="product__media-item">asdasasdasd
+              <div class="product__media-item">
                 <div
                   class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
                   style="--ratio: 1.0; --preview-ratio: 1.0;"
@@ -386,7 +386,7 @@
                         -}}
                       </span>
                     {%- endif -%}
-                  </div>
+                  </div>ASDASD
                   {%- if product.quantity_price_breaks_configured? -%}
                     <volume-pricing class="parent-display" id="Volume-{{ section.id }}">
                       {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
