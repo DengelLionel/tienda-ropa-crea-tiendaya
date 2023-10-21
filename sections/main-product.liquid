@@ -690,24 +690,24 @@
         {%- endfor -%}
       ]
     }
-    
-  </script>
+ 
 </section>
 <script>
-  document.getElementById('imgLoader').addEventListener('change', function(e) {
-    var file = e.target.files[0];
-    var reader = new FileReader();
-    reader.onload = function (f) {
-      var data = f.target.result;
-      fabric.Image.fromURL(data, function (img) {
-        img.scaleToWidth(200); // Cambiar tamaño si es necesario
-        canvas.add(img);
-      });
-    };
-    reader.readAsDataURL(file);
-  });
-</script>
-
+     document.getElementById('imgLoader').addEventListener('change', function(e) {
+  var file = e.target.files[0];
+  var reader = new FileReader();
+  reader.onload = function (f) {
+    var data = f.target.result;
+    fabric.Image.fromURL(data, function (img) {
+      img.scaleToWidth(200); // Cambiar tamaño si es necesario
+      canvas.add(img);
+    });
+  };
+  reader.readAsDataURL(file);
+});
+    
+    console.log('asdasd')
+  </script>
 {% schema %}
 {
   "name": "t:sections.main-product.name",
