@@ -723,7 +723,8 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
   function AddImage(url) {
 
     var options = {
-    
+    left: canvas.width / 2, // Posición horizontal en el centro
+    top: canvas.height / 2
     width: 100, // Ancho de la imagen
     height: 100
 };
