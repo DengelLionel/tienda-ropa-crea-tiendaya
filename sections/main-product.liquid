@@ -361,7 +361,6 @@
                     </span>
                   {%- endif -%}
                 </div>
-                                                                    <input type="file" id="imgLoader" accept="image/*">
 
                 {%- if product.quantity_price_breaks_configured? -%}
                   <volume-pricing class="parent-display no-js-hidden" id="Volume-{{ section.id }}">
@@ -399,6 +398,8 @@
                 {%- endif -%}
 
               </div>
+                                                                                <input type="file" id="imgLoader" accept="image/*">
+
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
