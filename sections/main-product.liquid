@@ -726,14 +726,15 @@
   fabric.Image.fromURL(url, function (img) {
     img.scaleToWidth(canvas.getWidth()); // Ajustar la imagen al ancho del canvas
     var options = {
-      left: canvas.getWidth() / 2 - img.getScaledWidth() / 2,
-      top: canvas.getHeight() / 2 - img.getScaledHeight() / 2,
+     
       scaleX: 0.5, // Escala horizontal
       scaleY: 0.5 // Escala vertical
     };
     img.set(options);
     canvas.add(img);
     canvas.setActiveObject(img);
+    canvas.centerObject(img); // Centrar la imagen en el canvas
+
   });
 }
 
