@@ -24,7 +24,13 @@
       modal_id: section.id
     %}
 {% endcomment %}
-
+{% style %}
+  .imgLoader {
+    width: 100%;
+    height: 100%;
+    position: absolute
+  }
+  {% endstyle %}
 {%- liquid
   unless lazy_load == false
     assign lazy = 'lazy'
