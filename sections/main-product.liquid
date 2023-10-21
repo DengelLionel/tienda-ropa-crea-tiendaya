@@ -396,7 +396,6 @@
                   {%- endif -%}
                   </volume-pricing>
                 {%- endif -%}
-                                        <input type="file" id="imgLoader" accept="image/*">
 
               </div>
             {%- when 'popup' -%}
@@ -557,6 +556,8 @@
         </a>
       </product-info>
     </div>
+                                                                  <input type="file" id="imgLoader" accept="image/*">
+
     {%- if section.settings.media_position == 'right' -%}
       {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
       <div class="grid__item product__media-wrapper small-hide">
