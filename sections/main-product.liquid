@@ -772,6 +772,13 @@
     cornerSize: 24
   });
 */
+    function handleImage(e) {
+      var reader = new FileReader();
+      reader.onload = function (event) {
+          AddImage(event.target.result);
+      }
+      reader.readAsDataURL(e.target.files[0]);
+  }
   document.getElementById('imageLoader').addEventListener('change', handleImage, false);
 
   
