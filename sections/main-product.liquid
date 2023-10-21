@@ -724,8 +724,8 @@
 
   function AddImage(url) {
   var options = {
-    left: canvas.width / 2,
-    top: canvas.height / 2,
+    left: canvas.getWidth() / 2 - img.width * 0.5,
+    top: canvas.getHeight() / 2 - img.height * 0.5,
     scaleX: 0.5, // Escala horizontal
     scaleY: 0.5 // Escala vertical
 };
