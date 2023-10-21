@@ -720,11 +720,12 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
   fabric.Object.prototype.cornerColor = 'blue';
   fabric.Object.prototype.cornerStyle = 'circle';
 
-  function AddImage(url) {
-  fabric.Image.fromURL(url, function (img) {
-    canvas.add(img);
-    canvas.setActiveObject(img);
-  });
+  function AddImage(url, initialWidth) {
+    fabric.Image.fromURL(url, function (img) {
+        img.setWidth(initialWidth); // Establecer el ancho inicial de la imagen
+        canvas.add(img);
+        canvas.setActiveObject(img);
+    });
 }
 
   function renderIcon(icon) {
@@ -760,8 +761,7 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
     cornerSize: 24
   });
 */
-  AddImage('https://i.imgur.com/FIO21v3.png');
-
+AddImage('https://example.com/imagen.jpg', 200);
   function deleteObject(eventData, transform) {
                 var target = transform.target;
 		var canvas = target.canvas;
