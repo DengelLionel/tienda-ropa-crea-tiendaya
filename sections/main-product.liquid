@@ -720,7 +720,7 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
   fabric.Object.prototype.cornerColor = 'blue';
   fabric.Object.prototype.cornerStyle = 'circle';
 
-  function AddImage(url, 100px) {
+  function AddImage(url, 100) {
     fabric.Image.fromURL(url, function (img) {
         img.setWidth(initialWidth); // Establecer el ancho inicial de la imagen
         canvas.add(img);
