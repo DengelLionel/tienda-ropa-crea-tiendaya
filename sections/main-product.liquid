@@ -398,7 +398,10 @@
                 {%- endif -%}
 
               </div>
-                                                                                <input type="file" id="imgLoader" accept="image/*">
+            {% comment %}
+            INPUT FOR CANVAS
+            {% endcomment %}
+            <input type="file" id="imgLoader" accept="image/*">
 
             {%- when 'popup' -%}
               <modal-opener
