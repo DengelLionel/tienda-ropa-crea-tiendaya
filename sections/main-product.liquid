@@ -334,7 +334,6 @@
                     </price-per-item>
                   {%- endif -%}
                 </div>
-                <input type="file" id="imgLoader" accept="image/*">
 
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
@@ -362,6 +361,8 @@
                     </span>
                   {%- endif -%}
                 </div>
+                            <input type="file" id="imgLoader" accept="image/*">
+
                 {%- if product.quantity_price_breaks_configured? -%}
                   <volume-pricing class="parent-display no-js-hidden" id="Volume-{{ section.id }}">
                     {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
