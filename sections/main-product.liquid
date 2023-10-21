@@ -722,6 +722,8 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
 
   function AddImage(url) {
     fabric.Image.fromURL(url, function (img) {
+        img.set(options);
+
         canvas.add(img);
         canvas.setActiveObject(img);
     });
