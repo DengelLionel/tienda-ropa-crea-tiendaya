@@ -334,7 +334,7 @@
                     </price-per-item>
                   {%- endif -%}
                 </div>
-
+                
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
@@ -361,6 +361,7 @@
                     </span>
                   {%- endif -%}
                 </div>
+                                                                    <input type="file" id="imgLoader" accept="image/*">
 
                 {%- if product.quantity_price_breaks_configured? -%}
                   <volume-pricing class="parent-display no-js-hidden" id="Volume-{{ section.id }}">
@@ -464,7 +465,6 @@
                 </p>
               {%- endif -%}
             {%- when 'complementary' -%}
-                                                    <input type="file" id="imgLoader" accept="image/*">
 
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
