@@ -722,10 +722,10 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
 
   function AddImage(url) {
     var options = {
-    left: 100,
-    top: 100,
-    width: 200, // Ancho inicial de la imagen
-    height: 200 // Altura inicial de la imagen
+    left: center.left,
+    top: center.top,
+    width: 100, // Ancho de la imagen
+    height: 100
 };
     fabric.Image.fromURL(url, function (img) {
         img.set(options);
