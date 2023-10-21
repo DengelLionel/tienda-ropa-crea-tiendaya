@@ -265,7 +265,7 @@
                         {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
                       </span>
                       {% render 'icon-plus' %}
-                    </button>ASDA
+                    </button>
                   </quantity-input>
                   {%- liquid
                     assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
@@ -334,6 +334,8 @@
                     </price-per-item>
                   {%- endif -%}
                 </div>
+                <input type="file" id="imgLoader" accept="image/*">
+
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
