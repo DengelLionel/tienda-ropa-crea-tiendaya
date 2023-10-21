@@ -724,10 +724,15 @@
   fabric.Object.prototype.cornerStyle = 'circle';
 
   function AddImage(url) {
+  var options = {
+    left: canvas.width / 2,
+    top: canvas.height / 2,
+    scaleX: 0.5, // Escala horizontal
+    scaleY: 0.5 // Escala vertical
+};
     fabric.Image.fromURL(url, function (img) {
         img.scaleToWidth(canvas.getWidth()); // Ajustar la imagen al ancho del canvas
         img.set(options);
-
         canvas.add(img);
         canvas.setActiveObject(img);
     });
