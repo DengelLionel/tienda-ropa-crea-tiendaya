@@ -563,7 +563,12 @@
       </product-info>
                           
     </div>
-                          
+       <div class="controls">
+    <p>
+      <button id="add" onclick="Add()">Add a rectangle</button>
+    </p>
+  </div>
+  <canvas id="c" width="400" height="300" style="border:1px solid #ccc"></canvas>                       
     {%- if section.settings.media_position == 'right' -%}
       {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
       <div class="grid__item product__media-wrapper small-hide">
@@ -598,12 +603,7 @@
         </div>
       </div>
     </modal-dialog>
-    <div class="controls">
-    <p>
-      <button id="add" onclick="Add()">Add a rectangle</button>
-    </p>
-  </div>
-  <canvas id="c" width="400" height="300" style="border:1px solid #ccc"></canvas>
+  
   {%- endfor -%}
 
   {%- if product.media.size > 0 -%}
