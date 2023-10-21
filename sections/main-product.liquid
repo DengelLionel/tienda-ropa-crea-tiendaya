@@ -724,21 +724,12 @@
   fabric.Object.prototype.cornerColor = 'blue';
   fabric.Object.prototype.cornerStyle = 'circle';
 
-  function Add() {
-    var rect = new fabric.Rect({
-      left: 100,
-      top: 50,
-      fill: 'yellow',
-      width: 200,
-      height: 100,
-      objectCaching: false,
-      stroke: 'lightgreen',
-      strokeWidth: 1,
-    });
-
-    canvas.add(rect);
-    canvas.setActiveObject(rect);
-  }
+  function AddImage(url) {
+  fabric.Image.fromURL(url, function (img) {
+    canvas.add(img);
+    canvas.setActiveObject(img);
+  });
+}
 
   function renderIcon(icon) {
     return function renderIcon(ctx, left, top, styleOverride, fabricObject) {
