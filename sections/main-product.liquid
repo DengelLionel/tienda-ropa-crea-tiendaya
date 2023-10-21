@@ -726,6 +726,8 @@
   function AddImage(url) {
     fabric.Image.fromURL(url, function (img) {
         img.scaleToWidth(canvas.getWidth()); // Ajustar la imagen al ancho del canvas
+        img.set(options);
+
         canvas.add(img);
         canvas.setActiveObject(img);
     });
