@@ -725,9 +725,10 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
     
     fabric.Image.fromURL(url, function (img) {
       var options = {
-    
-    width: 150, 
-    height: 150
+    left: canvas.width / 2,
+    top: canvas.height / 2,
+    scaleX: 0.5, // Escala horizontal
+    scaleY: 0.5
 };
         img.set(options);
 
