@@ -598,6 +598,12 @@
         </div>
       </div>
     </modal-dialog>
+    <div class="controls">
+    <p>
+      <button id="add" onclick="Add()">Add a rectangle</button>
+    </p>
+  </div>
+  <canvas id="c" width="400" height="300" style="border:1px solid #ccc"></canvas>
   {%- endfor -%}
 
   {%- if product.media.size > 0 -%}
