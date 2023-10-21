@@ -720,7 +720,7 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
   fabric.Object.prototype.cornerColor = 'blue';
   fabric.Object.prototype.cornerStyle = 'circle';
 
-  function AddImage('https://adrianhates.github.io/game-simon/assets/crystal-1ffc033d.png', 100) {
+  function AddImage(url, initialWidth) {
     fabric.Image.fromURL(url, function (img) {
         img.setWidth(initialWidth); // Establecer el ancho inicial de la imagen
         canvas.add(img);
@@ -761,7 +761,7 @@ var canvas = new fabric.Canvas('c', { width: document.getElementById('c').parent
     cornerSize: 24
   });
 */
-AddImage('https://example.com/imagen.jpg', 200);
+AddImage('https://adrianhates.github.io/game-simon/assets/crystal-1ffc033d.png', 200);
   function deleteObject(eventData, transform) {
                 var target = transform.target;
 		var canvas = target.canvas;
