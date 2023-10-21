@@ -246,7 +246,7 @@
                 endif
               endcapture
               assign media_index = media_index | plus: 1
-            -%}
+            -%}ASDASD
             <li
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
               class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
@@ -300,7 +300,7 @@
         aria-label="{{ 'general.slider.next_slide' | t }}"
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
-      >ASDASDASD
+      >
         {% render 'icon-caret' %}
       </button>
     </slider-component>
