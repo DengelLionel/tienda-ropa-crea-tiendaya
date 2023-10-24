@@ -779,11 +779,12 @@
       var reader = new FileReader();
       reader.onload = function (event) {
           AddImage(event.target.result);
-          html2canvas(document.getElementById('c')).then(function(canvas) {
-    document.body.appendChild(canvas);
-});
+          
       }
       reader.readAsDataURL(e.target.files[0]);
+      html2canvas(document.getElementById('c')).then(function(canvas) {
+    document.body.appendChild(canvas);
+});
   }
   document.getElementById('imageLoader').addEventListener('change', handleImage, true);
 
