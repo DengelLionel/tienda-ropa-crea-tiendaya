@@ -150,7 +150,7 @@
   assign color_text=section.settings.color_letras_icon
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} data-initial-transparent="{{ section.settings.color_scheme }}" style="background-color: {% if section.settings.sticky_header_type == 'initial-transparent'%}transparent{% else %}'{{ section.settings.color_scheme }}'{% endif %}" class="header-wrapper  gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} data-initial-transparent="{{ section.settings.color_scheme }}" style="background-color: {{ section.settings.color_scheme }}" class="header-wrapper  gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
