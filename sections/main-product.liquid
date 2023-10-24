@@ -782,10 +782,6 @@
           
       }
       reader.readAsDataURL(e.target.files[0]);
-      const element = document.querySelector(".product__media.media.media--transparent");
-  html2canvas(element).then(function(canvas) {
-    document.body.appendChild(canvas);
-  })
   }
   document.getElementById('imageLoader').addEventListener('change', handleImage, true);
 
@@ -806,6 +802,11 @@
       canvas.add(cloned);
     });
   }
+  document.getElementById('captureButton').addEventListener('click', function() {
+            html2canvas(document.querySelector(".product__media.media.media--transparent").then(function(canvas) {
+                document.body.appendChild(canvas);
+            });
+        });
 </script>
  
 {% schema %}
