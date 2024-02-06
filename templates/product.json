@@ -10,6 +10,13 @@
             "text_style": "subtitle"
           }
         },
+        "review_cty_star_rating_b9WXtW": {
+          "type": "shopify:\/\/apps\/review-cty\/blocks\/star_rating\/267ac507-ceeb-4b0e-8586-30b3959b8210",
+          "settings": {
+            "product": "{{product}}",
+            "colour": "#ff0000"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -52,6 +59,7 @@
       },
       "block_order": [
         "vendor",
+        "review_cty_star_rating_b9WXtW",
         "title",
         "price",
         "variant_picker",
